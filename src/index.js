@@ -7,10 +7,12 @@ import STATUS from './enums/status.js';
 import productsRouter from './routes/products.route.js';
 import checkoutRouter from './routes/checkout.route.js';
 
+import authRouter from './routes/auth.routes.js'
 dotenv.config();
 
 const app = express();
 app.use(json(), cors());
+app.use(authRouter)
 
 app.use(productsRouter);
 app.use(checkoutRouter);
