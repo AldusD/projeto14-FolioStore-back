@@ -5,7 +5,7 @@ import STATUS from '../enums/status.js';
 
 const checkout = async (req, res) => {
     const userId = res.locals.id;
-    const products = res.body.products;
+    const products = req.body.products;
         try {
             const order = await db.collection(COLLECTIONS.ORDERS).insertOne({ userId, products })
             console.log(order);
