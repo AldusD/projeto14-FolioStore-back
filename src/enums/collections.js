@@ -1,6 +1,8 @@
 const COLLECTIONS = Object.freeze({
     USERS: 'users',
-    SESSIONS: 'sessions'
+    SESSIONS: 'sessions',
+    PRODUCTS: 'products',
+    CATEGORIES: 'categories'
 });
 
 export default  COLLECTIONS;
